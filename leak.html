@@ -32,6 +32,11 @@
 <link rel="prefetch" href="https://leaking.via/prefetch" />
 <link rel="preload" href="https://leaking.via/preload" />
 <link rel="prerender" href="https://leaking.via/prerender" />
+<!--
+Note that OpenSearch description URLs are ignored in Chrome if this file isn't placed in the webroot.
+Also, in Chrome, you won't see the request in the developer tools because the request happens in the privileged browser process.
+Use a network sniffer to detect it.
+-->
 <link rel="search" href="https://leaking.via/search" />
 <link rel="search" type="application/opensearchdescription+xml" href="https://leaking.via/search-with-type" title="Search" /> 
 <link rel="prev" href="https://leaking.via/prev" />
