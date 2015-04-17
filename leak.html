@@ -1,0 +1,203 @@
+<!DOCTYPE html SYSTEM "https://leaking.via/doctype">
+<html xmlns="http://www.w3.org/1999/xhtml" manifest="https://leaking.via/html-manifest">
+<head>
+
+<!--
+%Base (check manually)
+-->
+<base href="https://leaking.via/base-href/">
+
+<!--
+%MSIE Imports
+-->
+<?IMPORT namespace="myNS" implementation="https://leaking.via/import-implementation" />
+
+<!--
+%Redirects
+<meta http-equiv="refresh" content="4; url=javascript:123456">
+<meta http-equiv="refresh" content="3; url=data:text/html,<script>alert(document['refer'+'rer'])</script>">
+<meta http-equiv="refresh" content="2; url=https://example.com/">
+<meta http-equiv="refresh" content="1; url=http://html5sec.org/test.pdf">
+-->
+
+<!-- 
+%Links 
+-->
+<link rel="stylesheet" href="https://leaking.via/stylesheet" />
+<link rel="icon" href="https://leaking.via/icon" />
+<link rel="canonical" href="https://leaking.via/canonical" />
+<link rel="shortcut icon" href="https://leaking.via/shortcut-icon" />
+<link rel="import" href="https://leaking.via/import" />
+<link rel="dns-prefetch" href="https://leaking.via/dns-prefetch" />
+<link rel="prefetch" href="https://leaking.via/prefetch" />
+<link rel="preload" href="https://leaking.via/preload" />
+<link rel="prerender" href="https://leaking.via/prerender" />
+<link rel="search" href="https://leaking.via/search" />
+<link rel="search" type="application/opensearchdescription+xml" href="https://leaking.via/search-with-type" title="Search" /> 
+<link rel="prev" href="https://leaking.via/prev" />
+<link rel="next" href="https://leaking.via/next" />
+<link rel="alternate" href="https://leaking.via/alternate" />
+<link rel="alternate stylesheet" href="https://leaking.via/alternate-stylesheet" />
+<link rel="archives" href="https://leaking.via/archives" />
+<link rel="external" href="https://leaking.via/external" />
+<link rel="first" href="https://leaking.via/first" />
+<link rel="last" href="https://leaking.via/last" />
+<link rel="pingback" href="https://leaking.via/pingback" />
+<link rel="sidebar" href="https://leaking.via/sidebar" />
+<link rel="up" href="https://leaking.via/up" />
+<link rel="tag" href="https://leaking.via/tag" />
+<link rel="help" href="https://leaking.via/help" />
+<link rel="author" href="https://leaking.via/author" />
+<link rel="start" href="https://leaking.via/start" />
+<link rel="offline" href="https://leaking.via/offline" />
+<link rel="index" href="https://leaking.via/index" />
+<link rel="feedurl" href="https://leaking.via/feedurl" />
+<link rel="entry-content" href="https://leaking.via/entry-content" />
+<link rel="appendix" href="https://leaking.via/appendix" />
+<link rel="bookmark" href="https://leaking.via/bookmark" />
+<link rel="chapter" href="https://leaking.via/chapter" />
+<link rel="contents" href="https://leaking.via/contents" />
+<link rel="copyright" href="https://leaking.via/copyright" />
+<link rel="glossary" href="https://leaking.via/glossary" />
+<link rel="section" href="https://leaking.via/section" />
+<link rel="subsection" href="https://leaking.via/subsection" />
+</head>
+
+<body>
+
+<!--
+%Backgrounds
+-->
+<table background="https://leaking.via/table-background"><tr><td></td></tr></table>
+
+<!--
+%Images
+-->
+<img src="https://leaking.via/img-src">
+<img dynsrc="https://leaking.via/img-dynsrc">
+<img lowsrc="https://leaking.via/img-lowsrc">
+<img src="data:image/svg+xml,<svg%20xmlns='%68ttp:%2f/www.w3.org/2000/svg'%20xmlns:xlink='%68ttp:%2f/www.w3.org/1999/xlink'><image%20xlink:hr%65f='%68ttp:%2f/evil.com/svg-via-data'></image></svg>">
+
+<image src="https://leaking.via/image-src">
+<image href="https://leaking.via/image-href">
+
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<image href="https://leaking.via/svg-image-href">
+<image xlink:href="https://leaking.via/svg-image-xlink-href">
+</svg>
+
+<!--
+%Forms
+-->
+<form action="https://leaking.via/form-action"></form>
+<form id="test"></form><button form="test" formaction="https://leaking.via/button-formaction">CLICKME</button>
+<input type="image" src="https://leaking.via/input-src" name="test" value="test">
+
+<!--
+%Media
+-->
+
+<video src="https://leaking.via/video-src">
+  <track kind="subtitles" label="English subtitles" src="https://leaking.via/track-src" srclang="en" default></track>
+</video>
+<video controls>
+  <source src="https://leaking.via/video-source-src" type="video/mp4">
+</video>
+<audio controls>
+  <source src="https://leaking.via/audio-source-src" type="video/mp4">
+</audio>
+
+<!--
+%Object & Embed
+-->
+<object data="https://leaking.via/object-data"></object>
+<object movie="https://leaking.via/object-movie" type="application/x-shockwave-flash"></object>
+<object movie="https://leaking.via/object-movie">
+    <param name="type" value="application/x-shockwave-flash"></param>
+</object>
+<embed src="https://leaking.via/embed-src"></embed>
+
+<!--
+%Script
+-->
+<script src="https://leaking.via/script-src"></script>
+<svg><script xlink:href="https://leaking.via/svg-script-href"></script></svg>
+
+<!--
+%Frames
+-->
+<iframe src="https://leaking.via/iframe-src"></iframe>
+<iframe src="data:image/svg+xml,<svg%20xmlns='%68ttp:%2f/www.w3.org/2000/svg'%20xmlns:xlink='%68ttp:%2f/www.w3.org/1999/xlink'><image%20xlink:hr%65f='%68ttp:%2f/evil.com/svg-via-data'></image></svg>"></iframe>
+<iframe srcdoc="<img src=https://leaking.via/iframe-srcdoc-img-src>"></iframe>
+<frameset>
+    <frame src="https://leaking.via/frame-src"></frame>
+</frameset>
+
+<!--
+%CSS
+-->
+<style>
+    @import 'https://leaking.via/css-import-string';
+    @import url(https://leaking.via/css-import-url);
+</style>
+<style>
+    a:after {content: url(https://leaking.via/css-after-content)}
+</style>
+<a href="#">123</a>
+<style>
+    big {
+        list-style-image: url(https://leaking.via/css-list-style-image);
+        background-image: url(https://leaking.via/css-list-style-image);
+        border-image: url(https://leaking.via/css-list-style-image);
+    }
+</style>
+<big>456</big>
+<svg>
+    <style>
+        circle {
+            fill: url(https://leaking.via/svg-css-fill);
+            mask: url(https://leaking.via/svg-css-mask);
+        }
+    </style>
+    <circle r="40"></circle>
+</svg>
+
+<!--
+%Inline CSS
+-->
+<b style="
+        list-style-image: url(https://leaking.via/inline-css-list-style-image);
+        background-image: url&lpar:https://leaking.via/inline-css-list-style-image);
+        border-image: url\000028https://leaking.via/inline-css-list-style-image);
+">678</b>
+
+<!--
+%Applet
+-->
+<applet code="Test" codepath="https://leaking.via/applet-code"></applet>
+<applet code="Test" archive="https://leaking.via/applet-archive"></applet>
+<applet code="Test" object="https://leaking.via/applet-object"></applet>
+
+<!--
+%SVG
+-->
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <defs>
+    <linearGradient id="Gradient">
+      <stop offset="0" stop-color="white" stop-opacity="0" />
+      <stop offset="1" stop-color="white" stop-opacity="1" />
+    </linearGradient>
+    <mask id="Mask">
+      <rect x="0" y="0" width="200" height="200" fill="url(https://leaking.via/svg-fill)"  />
+    </mask>
+  </defs>
+  <rect x="0" y="0" width="200" height="200" fill="green" />
+  <rect x="0" y="0" width="200" height="200" fill="red" mask="url(https://leaking.via/svg-mask)" />
+</svg>
+
+<!--
+%Data Islands
+-->
+<xml src="https://leaking.via/xml-src" id="xml"></xml>
+<div datasrc="#xml" datafld="$text" dataformatas="html"></div>
+
