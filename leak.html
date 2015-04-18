@@ -246,6 +246,18 @@ https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a#attr-ping
   <rect x="0" y="0" width="200" height="200" fill="red" mask="url(https://leaking.via/svg-mask)" />
 </svg>
 
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <image xmlns:xlink="http://www.w3.org/1999/xlink">
+        <set attributeName="xlink:href" begin="0s" to="https://leaking.via/svg-image-set" />
+    </image>
+</svg>
+
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <image xmlns:xlink="http://www.w3.org/1999/xlink">
+        <animate attributeName="xlink:href" begin="0s" from="#" to="https://leaking.via/svg-image-animate" />
+    </image>
+</svg>
+
 <!--
 %Data Islands
 -->
