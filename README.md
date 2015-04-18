@@ -9,7 +9,11 @@ In one single HTML file. See the file `leak.html` ([raw text version](https://ra
 
 You can use this to test your browser for *CSP leaks*, your web-mailer for *HTTP leaks* and everything else that is *not* supposed to send HTTP requests to where the sun won't shine.
 
-With "HTTP Leak", we are essentially referring to a situation, where a certain combination of HTML elements and attributes cause a request to an external resource to be fired - when it should not. Think for example of the body of an HTML mail where a HTTP Leak would tell someone out there that you just read tat mail. Not always bad - but almost never good. Or think about web proxies. Those tools try to show you a website from a different domain to offer what they call "anonymity". Of course they have to also rewrite all HTML elements and attributes that fetch resources via HTTP (or alike) and if they forget something, the so called "anonymity" is gone. And, since no one really knows what elements and attributes can request external resources, we decided to create this project.
+With "HTTP Leak", we are essentially referring to a situation, where a certain combination of HTML elements and attributes cause a request to an external resource to be fired - when it should not. Think for example of the body of an HTML mail where a HTTP Leak would tell someone out there that you just read that mail. Not always bad - but almost never good. 
+
+Or think about web proxies. Those tools try to show you a website from a different domain to offer what they call "anonymity". Of course they have to also rewrite all HTML elements and attributes that fetch resources via HTTP (or alike) and if they forget something, the so called "anonymity" is gone. 
+
+And, since no one really knows anymore what elements and attributes can request external resources, we decided to create this project to keep track on that.
 
 ## And now?
 
