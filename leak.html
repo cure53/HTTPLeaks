@@ -38,7 +38,7 @@ Also, in Chrome, you won't see the request in the developer tools because the re
 Use a network sniffer to detect it.
 -->
 
-<link rel="search" type="application/opensearchdescription+xml" href="https://leaking.via/link-search" title="Search" /> 
+<link rel="search" type="application/opensearchdescription+xml" href="https://leaking.via/link-search-2" title="Search" /> 
 <link rel="prev" href="https://leaking.via/link-prev" />
 <link rel="next" href="https://leaking.via/link-next" />
 <link rel="alternate" href="https://leaking.via/link-alternate" />
@@ -78,10 +78,10 @@ Use a network sniffer to detect it.
 <!-- 
 %Links & Maps
 -->
-<a ping="http://leaking.via/a-ping" href="?">You have to click me</a>
-<img src="#" width="150" height="150" usemap="#map">
+<a ping="http://leaking.via/a-ping" href="#">You have to click me</a>
+<img src="data:;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw" width="150" height="150" usemap="#map">
 <map name="map">
-  <area ping="http://evil.com/" shape="rect" coords="0,0,150,150" href="?">
+  <area ping="http://leaking.via/area-ping" shape="rect" coords="0,0,150,150" href="#">
 </map> 
 <!-- 
 The ping attribute allows to send a HTTP request to an external IP or domain, 
@@ -93,7 +93,11 @@ https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a#attr-ping
 <!--
 %Table Background
 -->
-<table background="https://leaking.via/table-background"><tr><td></td></tr></table>
+<table background="https://leaking.via/table-background">
+    <tr>
+        <td background="https://leaking.via/td-background"></td>
+    </tr>
+</table>
 
 <!--
 %Images
