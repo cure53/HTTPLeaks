@@ -22,7 +22,6 @@
 %Links 
 -->
 <link rel="stylesheet" href="https://leaking.via/link-stylesheet" />
-<link rel="alternate" type="application/atom+xml" href="https://leaking.via" />	
 <link rel="icon" href="https://leaking.via/link-icon" />
 <link rel="canonical" href="https://leaking.via/link-canonical" />
 <link rel="shortcut icon" href="https://leaking.via/link-shortcut-icon" />
@@ -43,6 +42,7 @@ Use a network sniffer to detect it.
 <link rel="prev" href="https://leaking.via/link-prev" />
 <link rel="next" href="https://leaking.via/link-next" />
 <link rel="alternate" href="https://leaking.via/link-alternate" />
+<link rel="alternate" type="application/atom+xml" href="https://leaking.via/link-alternate-atom" /> 
 <link rel="alternate stylesheet" href="https://leaking.via/link-alternate-stylesheet" />
 <link rel="archives" href="https://leaking.via/link-archives" />
 <link rel="external" href="https://leaking.via/link-external" />
@@ -111,6 +111,14 @@ https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a#attr-ping
 <image xlink:href="https://leaking.via/svg-image-xlink-href">
 </svg>
 
+<picture>
+    <source srcset="https://leaking.via/picture-source-srcset">
+</picture>
+<picture>
+    <img srcset="https://leaking.via/picture-img-srcset">
+</picture>
+<img srcset=",,,,,https://leaking.via/img-srcset">
+
 <!--
 %Forms
 -->
@@ -158,12 +166,12 @@ https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a#attr-ping
 %Frames
 -->
 <iframe src="https://leaking.via/iframe-src"></iframe>
-<iframe src="data:image/svg+xml,<svg%20xmlns='%68ttp:%2f/www.w3.org/2000/svg'%20xmlns:xlink='%68ttp:%2f/www.w3.org/1999/xlink'><image%20xlink:hr%65f='%68ttp:%2f/evil.com/svg-via-data'></image></svg>"></iframe>
+<iframe src="data:image/svg+xml,<svg%20xmlns='%68ttp:%2f/www.w3.org/2000/svg'%20xmlns:xlink='%68ttp:%2f/www.w3.org/1999/xlink'><image%20xlink:hr%65f='%68ttps:%2f/leaking.via/svg-via-data'></image></svg>"></iframe>
 <iframe srcdoc="<img src=https://leaking.via/iframe-srcdoc-img-src>"></iframe>
 <frameset>
     <frame src="https://leaking.via/frame-src"></frame>
 </frameset>
-<iframe src="view-source:http://leaking.via/"></iframe>
+<iframe src="view-source:https://leaking.via/iframe-src-viewsource"></iframe>
 
 
 <!--
