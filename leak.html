@@ -22,6 +22,7 @@
 <!-- 
 %Links 
 -->
+<<<<<<< HEAD
 <link rel="stylesheet" href="https://leaking.via/link-stylesheet" />
 <link rel="icon" href="https://leaking.via/link-icon" />
 <link rel="canonical" href="https://leaking.via/link-canonical" />
@@ -31,7 +32,14 @@
 <link rel="prefetch" href="https://leaking.via/link-prefetch" />
 <link rel="preload" href="https://leaking.via/link-preload" />
 <link rel="prerender" href="https://leaking.via/link-prerender" />
+
 <link rel="search" href="https://leaking.via/link-search" />
+<!--
+Note that OpenSearch description URLs are ignored in Chrome if this file isn't placed in the webroot.
+Also, in Chrome, you won't see the request in the developer tools because the request happens in the privileged browser process.
+Use a network sniffer to detect it.
+-->
+
 <link rel="search" type="application/opensearchdescription+xml" href="https://leaking.via/link-search" title="Search" /> 
 <link rel="prev" href="https://leaking.via/link-prev" />
 <link rel="next" href="https://leaking.via/link-next" />
@@ -62,20 +70,28 @@
 <link rel="subsection" href="https://leaking.via/link-subsection" />
 </head>
 
-<body>
+<!--
+%Body Background
+-->
+<body background="https://leaking.via/body-background">
 
 <!-- 
 %Links & Maps
 -->
 <a ping="http://leaking.via/a-ping" href="?">You have to click me</a>
-
 <img src="//html5sec.org/test.gif" width="150" height="150" usemap="#map">
 <map name="map">
   <area ping="http://evil.com/" shape="rect" coords="0,0,150,150" href="?">
 </map> 
+<!-- 
+The ping attribute allows to send a HTTP request to an external IP or domain, 
+even if the link's HREF points somewhere else. The link has to be clicked though 
+
+https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a#attr-ping
+-->
 
 <!--
-%Backgrounds
+%Table Background
 -->
 <table background="https://leaking.via/table-background"><tr><td></td></tr></table>
 
@@ -106,7 +122,6 @@
 <!--
 %Media
 -->
-
 <video src="https://leaking.via/video-src">
   <track kind="subtitles" label="English subtitles" src="https://leaking.via/track-src" srclang="en" default></track>
 </video>
@@ -131,7 +146,8 @@
 %Script
 -->
 <script src="https://leaking.via/script-src"></script>
-<svg><script xlink:href="https://leaking.via/svg-script-href"></script></svg>
+<svg><script href="https://leaking.via/svg-script-href"></script></svg>
+<svg><script xlink:href="https://leaking.via/svg-script-xlink-href"></script></svg>
 
 <!--
 %Frames
@@ -157,11 +173,21 @@
 <style>
     big {
         list-style-image: url(https://leaking.via/css-list-style-image);
-        background-image: url(https://leaking.via/css-list-style-image);
-        border-image: url(https://leaking.via/css-list-style-image);
+        background-image: url(https://leaking.via/css-background-image);
+        border-image: url(https://leaking.via/css-border-image);
     }
 </style>
 <big>456</big>
+<style>
+    @font-face {
+        font-family: leak;
+        src: url(https://leaking.via/css-font-face-src);
+    }
+    big {
+        font-family: leak;
+    }
+</style>
+<big>789</big>
 <svg>
     <style>
         circle {
