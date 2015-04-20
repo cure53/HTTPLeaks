@@ -187,13 +187,19 @@ https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a#attr-ping
 </style>
 <style>
     a:after {content: url(https://leaking.via/css-after-content)}
+    a::after {content: url(https://leaking.via/css-after-content-2)}
+    a:before {content: url(https://leaking.via/css-before-content)}
+    a::before {content: url(https://leaking.via/css-before-content-2)}    
 </style>
 <a href="#">123</a>
 <style>
     big {
+        list-style: url(https://leaking.via/css-list-style);
         list-style-image: url(https://leaking.via/css-list-style-image);
+        background: url(https://leaking.via/css-background);
         background-image: url(https://leaking.via/css-background-image);
         border-image: url(https://leaking.via/css-border-image);
+        border-image-source: url(https://leaking.via/css-border-image-source);
     }
 </style>
 <big>456</big>
@@ -210,8 +216,10 @@ https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a#attr-ping
 <svg>
     <style>
         circle {
-            fill: url(https://leaking.via/svg-css-fill);
-            mask: url(https://leaking.via/svg-css-mask);
+            fill: url(https://leaking.via/svg-css-fill#foo);
+            mask: url(https://leaking.via/svg-css-mask#foo);
+            filter: url(https://leaking.via/svg-css-filter#foo);
+            clip-path: url(https://leaking.via/svg-css-clip-path#foo);
         }
     </style>
     <circle r="40"></circle>
@@ -221,15 +229,27 @@ https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a#attr-ping
 %Inline CSS
 -->
 <b style="
-        list-style-image: url(https://leaking.via/inline-css-list-style-image);
-        background-image: url&lpar:https://leaking.via/inline-css-list-style-image);
-        border-image: url\000028https://leaking.via/inline-css-list-style-image);
+        list-style: url(https://leaking.via/inline-css-list-style);
+        list-style-image: url&#40;https://leaking.via/inline-css-list-style-image&#41;;
+        background: url&#x28;https://leaking.via/inline-css-background&#x29;;
+        background-image: url&lpar;https://leaking.via/inline-css-background-image&rpar;;
+        border-image: url(https://leaking.via/inline-css-list-style-image);
+        border-image-source: url(https://leaking.via/inline-css-border-image-source);
 ">678</b>
+
+<svg>
+<circle style="
+        fill: url(https://leaking.via/svg-inline-css-fill#foo);
+        mask: url(https://leaking.via/svg-inline-css-mask#foo);
+        filter: url(https://leaking.via/svg-inline-css-filter#foo);
+        clip-path: url(https://leaking.via/svg-inline-css-clip-path#foo);
+"></circle>
+</svg>
 
 <!--
 %Applet
 -->
-<applet code="Test" codebase="https://leaking.via/applet-code"></applet>
+<applet code="Test" codebase="https://leaking.via/applet-codebase"></applet>
 <applet code="Test" archive="https://leaking.via/applet-archive"></applet>
 <applet code="Test" object="https://leaking.via/applet-object"></applet>
 
