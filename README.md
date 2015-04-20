@@ -21,4 +21,4 @@ The HTML will be extended as soon as we learn about a new leak, pull requests wi
 
 ## Acknowledgements
 
-Thanks [@hasegawayosuke](https://twitter.com/hasegawayosuke), [@masa141421356](https://twitter.com/masa141421356), [@mramydnei](https://twitter.com/mramydnei), [@avlidienbrunn ](https://twitter.com/avlidienbrunn ), [@orenhafif](https://twitter.com/orenhafif), [@freddyb](https://twitter.com/freddyb), [@tehjh](https://twitter.com/tehjh), [@webtonull](https://twitter.com/webtonull) and many others for adding content and smaller fixes here and there!
+Thanks [@hasegawayosuke](https://twitter.com/hasegawayosuke), [@masa141421356](https://twitter.com/masa141421356), [@mramydnei](https://twitter.com/mramydnei), [@avlidienbrunn ](https://twitter.com/avlidienbrunn ), [@orenhafif](https://twitter.com/orenhafif), [@freddyb](https://twitter.com/freddyb), [@tehjh](https://twitter.com/tehjh), [@webtonull](https://twitter.com/webtonull), @intchloe and many others for adding content and smaller fixes here and there!
