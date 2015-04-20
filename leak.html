@@ -191,7 +191,7 @@ https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a#attr-ping
     a:before {content: url(https://leaking.via/css-before-content)}
     a::before {content: url(https://leaking.via/css-before-content-2)}    
 </style>
-<a href="#">123</a>
+<a href="#">ABC</a>
 <style>
     big {
         list-style: url(https://leaking.via/css-list-style);
@@ -202,7 +202,7 @@ https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a#attr-ping
         border-image-source: url(https://leaking.via/css-border-image-source);
     }
 </style>
-<big>456</big>
+<big>DEF</big>
 <style>
     @font-face {
         font-family: leak;
@@ -212,7 +212,7 @@ https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a#attr-ping
         font-family: leak;
     }
 </style>
-<big>789</big>
+<big>GHI</big>
 <svg>
     <style>
         circle {
@@ -235,7 +235,7 @@ https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a#attr-ping
         background-image: url&lpar;https://leaking.via/inline-css-background-image&rpar;;
         border-image: url(https://leaking.via/inline-css-list-style-image);
         border-image-source: url(https://leaking.via/inline-css-border-image-source);
-">678</b>
+">JKL</b>
 
 <svg>
 <circle style="
@@ -245,6 +245,16 @@ https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a#attr-ping
         clip-path: url(https://leaking.via/svg-inline-css-clip-path#foo);
 "></circle>
 </svg>
+
+<!-- 
+%Exotic Inline CSS
+-->
+<div style="background: url() url() url() url() url(https://leaking.via/inline-css-multiple-backgrounds);"></div>
+<div style="behavior: url('https://leaking.via/inline-css-behavior');"></div>
+<div style="-ms-behavior: url('https://leaking.via/inline-css-behavior-2');"></div>
+<div style="background-image: image('https://leaking.via/inline-css-image-function')"></div>
+<div style="filter:progid:DXImageTransform.Microsoft.AlphaImageLoader( src='https://leaking.via/inline-css-filter-alpha', sizingMethod='scale');" ></div>
+<div style="filter:progid:DXImageTransform.Microsoft.ICMFilter(colorSpace='https://leaking.via/inline-css-filter-icm')"></div>
 
 <!--
 %Applet
