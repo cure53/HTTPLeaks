@@ -250,6 +250,22 @@ https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a#attr-ping
     </style>
     <circle r="40"></circle>
 </svg>
+<s foo="https://leaking.via/css-attr-notation">JKL</s>
+<style>
+    s {
+      --leak: url(https://leaking.via/css-variables);
+    }
+    s {
+      background: var(--leak);
+    }
+    s::after {
+      content: attr(foo url);
+    }    
+    s::before {
+      content: attr(notpresent, url(https://leaking.via/css-attr-fallback));
+    }
+</style>
+
 
 <!--
 %Inline CSS
