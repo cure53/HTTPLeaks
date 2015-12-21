@@ -239,10 +239,27 @@ https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a#attr-ping
 </style>
 <big>DEF</big>
 <style>
+    /* Basic font-face */
     @font-face {
         font-family: leak;
         src: url(https://leaking.via/css-font-face-src);
     }
+    
+    /* 
+    * Cross-browser font-face
+    * IE6-8 will use the EOT source, modern browsers will use WOFF(2) and fallback to TTF in case of error
+    * More info:
+    * http://www.paulirish.com/2009/bulletproof-font-face-implementation-syntax/
+    * http://caniuse.com/#search=eot
+    * http://caniuse.com/#search=woff2
+    * http://caniuse.com/#search=woff
+    * http://caniuse.com/#search=ttf
+    */
+    @font-face {
+      font-family: 'leak';
+      src: url('leak.eot?') format('eot'), url('leak.woff') format('woff'), url('leak.ttf') format('truetype');
+    }
+
     big {
         font-family: leak;
     }
