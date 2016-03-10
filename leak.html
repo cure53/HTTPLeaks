@@ -298,7 +298,16 @@ https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a#attr-ping
       content: attr(notpresent, url(https://leaking.via/css-attr-fallback));
     }
 </style>
-
+<style>
+    p#p1 {
+        background-image: \75 \72 \6C (https://leaking.via/css-escape-url-1);
+    }
+    p#p2 {
+        background-image: \000075\000072\00006C(https://leaking.via/css-escape-url-2);
+    }
+</style>
+<p id="p1">bla</p>
+<p id="p2">bla</p>
 
 <!--
 %Inline CSS
