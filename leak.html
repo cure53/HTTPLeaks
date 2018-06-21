@@ -274,8 +274,8 @@ https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a#attr-ping
         background: url(https://leaking.via/css-background);
         background-image: url(https://leaking.via/css-background-image);
         border-image: url(https://leaking.via/css-border-image);
-        -moz-border-image: url(https://leaking.via/css--moz-background-image-alias);
-        -webkit-border-image: url(https://leaking.via/css--webkit-background-image-alias);
+        -moz-border-image: url(https://leaking.via/css--moz-border-image-alias);
+        -webkit-border-image: url(https://leaking.via/css--webkit-border-image-alias);
         border-image-source: url(https://leaking.via/css-border-image-source);
         shape-outside: url(https://leaking.via/css-shape-outside);
         cursor: url(https://leaking.via/css-cursor), auto;
@@ -431,6 +431,10 @@ https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a#attr-ping
     <rect cursor="url(https://leaking.via/svg-cursor),auto" />
 </svg>
 
+<svg>
+    <font-face-uri xlink:href="https://leaking.via/svg-font-face-uri" />
+</svg>
+
 <!--
 %XSLT Stylesheets
 -->
@@ -462,6 +466,10 @@ https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a#attr-ping
     style="behavior:url(#default#vml);position:absolute;width:100%;height:100%" 
     src="https://leaking.via/vmlframe-src#xss">
 </vmlframe>
+
+<line xmlns="urn:schemas-microsoft-com:vml" style="behavior:url(#default#vml)">
+    <imageData style="behavior:url(#default#vml)" o:href="https://leaking.via/vml-line-imgdata-href" />
+</line>
 
 <!--
 %MathML
